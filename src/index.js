@@ -1,4 +1,4 @@
-const baseUrl = "https://platzi-avo.vercel.app";
+const baseUrl = process.env.baseUrl;
 const getFormat = function(price){
   const newPrice = new window.Intl.NumberFormat('en-EN',{
     style: "currency",
